@@ -35,7 +35,7 @@ public class HeroMovement : MonoBehaviour
     }
     public void FlipPlayer()
     {
-        transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         isFacingRight = !isFacingRight;
     }
 }

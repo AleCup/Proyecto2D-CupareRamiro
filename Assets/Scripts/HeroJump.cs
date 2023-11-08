@@ -30,6 +30,6 @@ public class HeroJump : MonoBehaviour
     }
     public void JumpPlayer()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce * Time.deltaTime);
     }
 }
